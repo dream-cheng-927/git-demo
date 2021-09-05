@@ -1,0 +1,129 @@
+
+            /*   泛娱乐 */
+            .Entertainment{
+                width: 1180px;
+                height: 520px;
+                margin: 0 auto;
+                background: url("../images/fanyule\ bg.jpg")no-repeat left 175px;
+            }
+            
+            .Entertainment .bg{
+                display: inline-block;
+                width: 55px;
+                height: 140px;
+                background: url("../images/content\ left.png")no-repeat -1067px -532px;
+            }
+            .Entertainment .list{
+                width: 1060px;
+                height: 100%;
+                position: relative;
+                float: right;
+                /* overflow: hidden; */
+            }
+            .Entertainment .list .more12{
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                right: -38px;
+                top: 43%;
+                z-index: 2;
+                opacity: 0;
+            }
+            .Entertainment .list .list-one{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                background: #fff;
+                border: 1px solid #c2a060;
+                position: absolute;
+                top: 50%;
+                left: -35px;
+                margin-top: -35px;
+                z-index: 1;
+                display: none;
+            }
+             .Entertainment .list .list-two{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                background: #fff;
+                border: 1px solid #c2a060;
+                position: absolute;
+                top: 50%;
+                right: -35px;
+                margin-top: -35px;
+                z-index: 1;
+             }
+            .Entertainment .list .list-one span{
+                display: inline-block;
+                width: 41px;
+                height: 10px;
+                background: url("../images/content\ auto\ jiantou2.png")no-repeat;
+                position: absolute;
+                left: 15px;
+                top: 45%;
+                transition: all .3s ease;
+            }
+            .Entertainment .list .list-two span{
+                display: inline-block;
+                width: 41px;
+                height: 10px;
+                background: url("../images/content\ auto\ jiantou.png")no-repeat;
+                position: absolute;
+                left: 15px;
+                top: 45%;
+                transition: all .3s ease;
+            }
+            .Entertainment .list .more12:hover ~.list-one span ,
+            .Entertainment .list .more12:hover ~.list-two span{
+                animation: arrow .5s ease;
+            }
+            .Entertainment .list .more12:checked ~.list-one{
+                display: block;
+            }
+            .Entertainment .list .more12:checked{
+                left: -38px;
+            }
+            .Entertainment .list .more12:checked~.list-three ul{
+                /* left: -964px; */
+                transform: translateX(-964px);
+            }
+            .Entertainment .list .list-three{
+                width: 1060px;
+                height: 103%;
+                overflow: hidden;
+                position: relative;
+            }
+            .Entertainment .list .list-three ul{
+                width: 2020px;
+                height: 100%;
+                display: flex;
+                position: absolute;
+               top: 20px;
+                justify-content: space-between;
+                transition: all 2s;
+            }
+            .Entertainment .list .list-three ul li{
+                width: 220px;
+                height: 100%;
+                cursor: pointer;
+                transition: all .5s;
+            }
+            .Entertainment .list .list-three ul .on1 div{
+                width: 200px;
+                height: 200px;
+                background: url("../images/tongrendachu\ img2\ 2.jpg")no-repeat center;
+                background-size: 100%;
+                position: absolute;
+                left: 10px;
+                bottom: -200px;
+                opacity:0;
+                transition: all .5s;
+            }
+            .Entertainment .list .list-three ul .on1:hover div{
+                bottom: 21px;
+                opacity:1;
+            }
+            .Entertainment .list .list-three ul li:hover{
+                transform: translateY(-20px);
+            }

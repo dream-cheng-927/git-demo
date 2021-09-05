@@ -1,0 +1,49 @@
+
+            /*   京都商业街   */
+            .kyoto{
+                width: 1180px;
+                height: 277px;
+                margin: 50px auto;
+            }
+            .kyoto .bg{
+                width: 53px;
+                height: 184px;
+                float: left;
+                background: url("../images/content\ left.png")no-repeat -1111px -297px;
+            }
+            .kyoto .kyoto-wrap{
+                width: 1060px;
+                height: 277px;
+                position: relative;
+                float: right;
+                overflow-y:hidden;
+            }
+            .kyoto .kyoto-wrap ul{
+                width: 8100px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+            .kyoto .kyoto-wrap ul li{
+                width: 250px;
+                height: 174px;
+                font-size: 13px;
+                position: relative;
+                transition: all .5s;
+                cursor:pointer;
+            }
+            .kyoto .kyoto-wrap ul li:hover{
+                transform: translateY(-20px);
+            }
+            .kyoto .kyoto-wrap ul li .li-one{
+                width: 1px;
+                height: 41px;
+                border-left: 1px solid #000;
+                position: absolute;
+                left: 47px;
+                bottom: 0px;
+            }
+            .kyoto .kyoto-wrap ul li p{
+                margin: 5px 0 0 57px;
+            }

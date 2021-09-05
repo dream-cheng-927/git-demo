@@ -1,0 +1,559 @@
+
+         /* 顶部导航栏 */
+         .nav{
+            background: url("../images/背景.jpg");
+           width: 1920px;
+           height: 64px;
+            position:sticky;
+            top:0;
+            z-index: 3;
+         }
+         .nav .left{
+             width: 300px;
+             height: 64px;
+           position: relative;
+            
+         }
+         .nav ul{
+             width: 1200px;
+             height: 64px;
+          position:absolute ;
+          left: 367px;
+          top: 0px;
+             font-size:14px;
+            
+         }
+         .nav ul li{
+             width: 90px;
+             height: 64px   ;
+             line-height: 64px;
+             text-align: center;
+             float: left;
+         }
+         .nav ul li a{
+             color: white; 
+         }
+         .nav ul li:hover a{
+             color: black;
+         }
+         .nav ul li:hover span{
+           display: none;
+         }
+         .nav ul li span{
+             display: inline-block;
+             width: 13px;
+             height: 10px;
+             border-right:1px solid white;
+         }
+         .nav ul li:nth-child(1){
+            background: url("../images/nav_bg1\ hover_d44f09d.jpg") no-repeat 0px -24px / 83px 88px;
+         }
+         .nav ul li:hover {
+             background: url("../images/nav_bg1\ hover_d44f09d.jpg") no-repeat 0px -24px / 83px 88px;
+         }
+         .nav .input{
+             width: 200px;
+             line-height: 64px;
+            position:absolute;
+            top: 0;
+            right: 0;
+         }
+         .nav .input input{
+             border-width:0px 0px 1px 0px ;
+             background-color: rgba(0, 0, 0, 0.1);
+             outline:none;
+            color: white;
+         }
+         .nav .input a{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background: url("../images/search_b180dd5.png") no-repeat center / cover;
+             position: absolute;
+             left: 140px;
+             top: 16px;
+             transition: all .5s;
+         }
+         .nav .input a:hover{
+             transform: rotateY(180deg);
+         }
+
+
+         /* 设置ul下隐藏img全部 */
+         .nav  ul  img{
+            width: 146px;
+             height: 88px;
+            margin-top: 20px;
+            border: 1px solid black;
+         }
+
+         /* 需要隐藏的子导航栏 */
+         .nav ul .hide{
+             width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             display: none;
+         }
+        
+         .nav ul .hide i{
+             width: 22px;
+             height: 34px;
+             color: white;
+             background: #c2a060;
+             position: absolute;
+             left: 0;
+             top: -77px;
+             
+         }
+         .nav ul .hide p{
+             width: 145.19px;
+             background: rgba(0, 0, 0, 0.4);
+            color: white;
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            text-align: center;
+           
+         }
+         .nav ul .hide a{
+             margin: 0 10px;
+             position: relative;
+
+         }
+         .nav ul .hide a:hover img{
+             border: 1px solid red;
+         }
+         .nav ul .hide .hide1{
+             width: 835px;
+             height: 140px;
+             margin: 0 auto;
+             line-height: 17px;
+             text-align: center;
+           
+         }
+         .nav ul li:nth-child(2):hover ~.hide{
+             display: block;
+         }
+         .nav ul li:nth-child(2):hover ~.hide .hide1{
+             display: block;
+         }
+         .nav ul .hide:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg")no-repeat;
+         }
+         .nav ul .hide:hover .hide1{
+             display: block;
+         }
+        
+
+         /*   hide2   隐藏的第二个子导航栏 */
+         .nav ul  .hide2{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             display: none;
+         }
+         .nav ul .hide2 div{
+             width: 1200px;
+             height: 140px;
+             margin: 10px auto;
+         } 
+         .nav ul .hide2 a{
+             position: relative;
+             margin: 0 10px;
+         }
+         .nav ul .hide2 a:nth-child(7) i{
+            position: absolute;
+            right: 1px;
+            bottom: 4px;
+         }
+         .nav ul .hide2 i{
+             width: 30px;
+             height: 26px;
+             color: black;
+             font-weight: 900;
+             line-height:26px;
+            position: absolute;
+            right: 5px;
+            bottom: 4px;
+            background:#c2a060;
+         }
+         .nav ul .hide2 img:hover{
+             border:1px solid red;
+         }
+         .nav ul li:nth-child(3):hover~.hide2{
+            display: block;
+           
+         }
+         .nav ul .hide2:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         }
+
+         /* 隐藏的第三个子导航栏 */
+         .nav ul  .hide3{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             display: none;
+         }
+         .nav ul .hide3 div{
+             width: 670px;
+             height: 140px;
+             margin: 10px auto;
+         } 
+         .nav ul .hide3 a{
+             position: relative;
+             margin: 0 10px;
+         }
+         .nav ul .hide3 a:nth-child(4) i{
+            position: absolute;
+            right: 1px;
+            bottom: 4px;
+         }
+         
+         .nav ul .hide3 i{
+             width: 65px;
+             height: 26px;
+             color: black;
+             font-weight: 900;
+             line-height:26px;
+            position: absolute;
+            right: 5px;
+            bottom: 4px;
+            background:#c2a060;
+         }
+         .nav ul .hide3 img:hover{
+             border:1px solid red;
+         }
+         .nav ul li:nth-child(4):hover~.hide3{
+            display: block;
+         }
+         .nav ul .hide3:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         }
+
+         /* 隐藏的第四个子导航栏 */
+         .nav ul  .hide4{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             text-align: left;
+             display: none;
+         }
+         .nav ul .hide4 div{
+             width: 980px;
+             height: 140px;
+             margin: 10px auto;
+         } 
+         .nav ul .hide4 a{
+             position: relative;
+             margin: 0 10px;
+             float: left;
+         }
+         .nav ul .hide4 img {
+           width: 220px;
+           height: 90px;
+           margin-top: 20px;
+           border: 1px solid black;
+ }
+         .nav ul .hide4 a:nth-child(2) i{
+            position: absolute;
+            right: 0px;
+            bottom :28px;
+         }
+         
+         .nav ul .hide4 div a i{
+             width: 220px;
+             height: 26px;
+             color:#c2a060;
+             font-weight: 900;
+             line-height:26px;
+            position: absolute;
+            right: 1px;
+            bottom: 28px;
+            background:rgba(0, 0, 0, 0.5);
+         }
+         /*    第一部分   */
+         .nav ul .hide4 .hide41{
+             width:230px ;
+             height: 100px;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+             display: inline-block;
+         }
+      
+         .nav ul .hide4  p{
+             font-size: 20px;
+             width: 230px;
+             line-height: 60px;
+             margin: 0 10px;
+         }
+         .nav ul .hide4 .hide41 a{
+             display: inline-block;
+             width: -1px;
+             line-height: 20px;
+             color:black ;
+             margin: 0 5px;
+         }
+         .nav ul .hide4 .hide41 a:nth-of-type(1)::after{
+             content: "";
+             height: 15px;
+             border-right:1px solid black ;
+             margin-left:10px ;
+         }
+         .nav ul .hide41 a:nth-of-type(2)::after{
+            content: "";
+             height: 15px;
+             border-right:1px solid black ;
+             margin-left:10px ;
+         }
+         .nav ul .hide41 a:nth-of-type(4)::after{
+            content: "";
+             height: 15px;
+             border-right:1px solid black ;
+             margin-left:10px ;
+         }
+         .nav ul .hide41 a:nth-of-type(5)::after{
+            content: "";
+             height: 15px;
+             border-right:1px solid black ;
+             margin-left:10px ;
+         }
+        .nav ul li:nth-child(5):hover~.hide4{
+            display: block;
+         }
+         .nav ul .hide4:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         } 
+         .nav ul .hide4 img:hover{
+             border: 1px solid red;
+         }
+         .nav ul .hide4 .hide41 a:hover{
+             text-decoration: underline;
+         }
+         /* 四子导航栏第二部分 */
+         .nav ul .hide4 .hide42{
+             width: 250px;
+             height: 100px;
+             float: right;
+         }
+         .nav ul .hide4 .hide42 a{
+             color: black;
+             line-height: 20px;
+         }
+         .nav ul .hide4 .hide42 a:hover{
+             text-decoration: underline;
+         }
+
+         /* 隐藏的第五个子导航栏 */
+         .nav ul  .hide5{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             text-align: left;
+             display: none;
+         }
+         .nav ul .hide5 div{
+            width: 1220px;
+            margin: 0 auto;
+         }
+         .nav ul .hide5 a{
+             position: relative;
+             margin: 0 10px;
+         }
+         .nav ul .hide5 i{
+             width: 124px;
+             height: 20px;
+             color: black;
+             font-weight: 900;
+             line-height:20px;
+             font-size: 13px;
+            position: absolute;
+            right: 1px;
+            bottom: 3px;
+            background:#c2a060;
+         }
+         .nav ul .hide5:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         } 
+         .nav ul .hide5 img:hover{
+             border: 1px solid red;
+         }
+         .nav ul li:nth-child(6):hover~.hide5{
+            display: block;
+         }
+         
+/* 第六个子导航栏 */
+.nav ul  .hide6{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             text-align: left;
+             display: none;
+         }
+         .nav ul .hide6 div{
+            width: 600px;
+            margin: 0 auto;
+         }
+         .nav ul .hide6 a{
+             position: relative;
+             margin: 0 10px;
+         }
+         .nav ul .hide6 i{
+             width: 65px;
+             height: 20px;
+             color: black;
+             font-weight: 900;
+             line-height:20px;
+             font-size: 15px;
+            position: absolute;
+            right: 1px;
+            bottom: 3px;
+            background:#c2a060;
+         }
+         .nav ul .hide6:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         } 
+         .nav ul .hide6 img:hover{
+             border: 1px solid red;
+         }
+         .nav ul li:nth-child(7):hover~.hide6{
+            display: block;
+         }
+         /* 隐藏的第七个子导航栏 */
+         .nav ul  .hide7{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             text-align: left;
+             display: none;
+         }
+         .nav ul .hide7 div{
+            width: 1300px;
+            height: 140px;
+            margin: 0 auto;
+            line-height: 34px;
+         }
+         .nav ul .hide7 div a{
+             width: 150px;
+             float: left;
+             margin: 0 10px;
+             box-sizing: border-box;
+             text-align: center;
+         }
+         .nav ul .hide7 div a:nth-child(1) img,.hide7 div a:nth-child(2) img{
+             border: 0px;
+            width: 80px;
+            height: 70px;
+         }
+         .nav ul .hide7 div a:nth-child(3) img,.hide7 div a:nth-child(4) img,.hide7 div a:nth-child(5) img{
+             width: 89px;
+             height: 89px;
+         }
+         .nav ul .hide7 div a p{
+             margin: 0px;
+             
+             line-height: 0px;
+             display: block;
+             color: black;
+         }
+         .nav ul .hide7 div div{
+             width: 300px;
+            float: right;
+            height: 110px;
+             line-height:27px;  
+             padding-left: 100px; ;
+             margin-top: 17px;
+             border-left: 1px solid rgba(0, 0, 0, 0.4);
+         } 
+         .nav ul .hide7 div div p{
+             height: 20px;
+         }
+         .nav ul .hide7:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         } 
+         .nav ul li:nth-child(11):hover~.hide7{
+            display: block;
+         }
+         /*  隐藏的第八个子导航栏 */
+         .nav ul  .hide8{
+            width: 1920px;
+             height: 140px;
+             background: url("../images/navbeijing2.jpg") no-repeat;
+             font-size: 12px;
+             position: absolute;
+             left: -302px;
+             top: 64px;
+             text-align: left;
+             display: none;
+         }
+         .nav ul .hide8 div{
+            width: 484px;
+            height: 140px;
+            float: right;
+            line-height: 34px;
+            position: absolute;
+            right: 400px;
+         }
+         .nav ul .hide8 div a p{
+             color: black;
+             line-height: 0px;
+         }
+         .nav ul .hide8 div a img{
+             width: 220px;
+             height: 92px;
+             border: 1px solid rgba(0, 0, 0, 0.1);
+         }
+         .nav ul .hide8 div a{
+             float:right;
+             margin: 0 10px;
+             text-align: center;
+         }
+
+         .nav ul .hide8:hover{
+             display: block;
+             background: url("../images/navbeijing2.jpg");
+         } 
+         .nav ul li:nth-child(12):hover~.hide8{
+            display: block;
+            z-index: 5;
+         }
+         .nav ul .hide8:hover .nav ul li:nth-child(12){
+            background: url("../images/nav_bg1\ hover_d44f09d.jpg") no-repeat 0px -24px / 83px 88px;
+         }
+         .nav ul .hide8 img:hover{
+             border: 1px solid red;
+         }

@@ -1,0 +1,335 @@
+
+         /* 主页内容 */
+         .content{
+            width: 1920px;
+            height: 784px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+        .content .animation{
+            position: absolute;
+           animation: animation 10s infinite ;
+           
+        }
+        @keyframes animation {
+          50%{
+              top:0px;
+              
+              opacity: 1;}
+            51%{
+              top: -784px;
+            
+              opacity: 0;}
+           100%{
+               opacity: 1;
+           top: -784px; 
+         }} 
+       
+         .content .wrap {
+             width: 100%;
+             height: 240px;
+            
+             background: rgba(0, 0, 0, 0.4);
+             position: absolute;
+             bottom: 0px;
+         }
+         .content .wrap .auto{
+             width: 1200px;
+             height: 100%;
+             margin: 0px auto;
+             position: relative;
+         }
+         .content .wrap .left{
+             width: 146px;
+             height: 285px;
+             background: url("../images/content\ left.png") no-repeat ;
+             position: absolute;
+             top: -45px;
+         }
+         /* .content .wrap .left .left1{
+             width: 108px;
+             height: 108px;
+           padding-left:0px ;
+         } */
+         .content .wrap .left .wrap1{
+             width: 145px;
+             height: 233px;
+             position: absolute;
+             top: 45px;
+             left: 0px;
+             text-align: center;
+             cursor: pointer;
+         }
+       .content .wrap .left .wrap1 .left1 img:nth-child(1){
+             height:108px;
+         }
+         .content .wrap .left .wrap1 .left1 img:nth-child(2){
+           position: absolute;
+           top: -3px;
+            left: 13px;
+             animation:scanning 4s linear infinite ;
+         }
+         @keyframes scanning {
+             50%{
+                 transform: translateY(100px);
+             }
+         }
+         .content .wrap .left .wrap1 .left2{
+             width: 108px;
+             height: 33px;
+             background: url("../images/content\ left2\ 1.png") no-repeat;
+             margin: 5px auto; 
+             color: white;
+             font-size: 12px;
+             text-align: left;
+         } 
+         .content .wrap .left .wrap1 .left3{
+             width: 108px;
+             height: 33px;
+             background: url("../images/content\ left2\ 2.jpg") no-repeat;
+             margin: 5px auto; 
+         } 
+         .content .wrap .left .wrap1 .left4{
+             width: 108px;
+             height: 33px;
+             background: url("../images/content\ left2\ 3.png") no-repeat;
+             margin: 5px auto; 
+         } 
+         .content .wrap .left .wrap1 .left2 .left2-hide{
+             width: 406px;
+             height: 190px;
+             background: url("../images/content\ left2\ hide.png")no-repeat 0px 0px /cover;
+             position: absolute;
+             top: -77px;
+             display: none;
+             z-index:1;
+         }
+         .content .wrap .left .wrap1 .left2 .left2-hide p{
+             padding: 8px 0px 0px 12px ;
+         }
+         .content .wrap .left .wrap1 .left2:hover .left2-hide{
+             display: block;
+         }
+
+
+
+         /* 中间部分更多新闻资讯 */
+           .content .auto  .Journalism{
+               width: 162px;
+               height: 44px;
+               background: rgba(0, 0, 0, 0.6);
+               color:#c2a060;
+               position: absolute;
+               top: -44px;
+               left: 160px;
+               text-align: center;
+               
+           }.Journalism p{
+               font-size: 17px;
+                 line-height: 28px;
+                 cursor: pointer;
+           }
+           .content .auto .Journalism span{
+               display: inline-block;
+               width: 78px;
+               height: 5px;
+               background: url("../images/content\ left.png") no-repeat -974px -870px ;
+           }
+
+
+
+
+           /* 主页内容轮播 更多. */
+           .content .auto .Rotation{
+               width:958px;
+               height: 225px; 
+               position: absolute;
+               left: 161px;
+                top: 0px;
+               font-size: 12px;
+               padding-top: 15px;
+                text-align: center;             
+            overflow: hidden;
+           }
+         
+       
+           .content .auto .Rotation ul{
+              width: 4680px;
+              position: absolute;
+               left: 0px;
+               animation: ul 15s linear infinite;
+           }
+           .content .auto .Rotation ul:hover{
+               animation-play-state:paused ;
+           }
+           @keyframes ul {
+               0%{left: 0px;}
+               10%{left: 0px;}
+               20%{left: -960px;}
+               30%{left: -960px;}
+               40%{left: -1915px;}
+               50%{left: -1915px;}
+               60%{left: -1915px;}
+               70%{left: -2864px;}
+               80%{left: -2864px;}
+               90%{left: -2864px;}
+               100%{left: 0px;}
+           }
+           .content .auto .Rotation ul li{
+               width: 200px;
+               height: 170px;
+              float: left;
+           }
+           .content .auto .Rotation ul .tuijian{
+               width:200px ;
+               position: relative;
+           }
+           .content .auto .Rotation ul .tuijian img{
+               width: 200px;
+               height: 143px;
+           }
+           .content .auto .Rotation ul .tuijian span{
+               display: inline-block;
+               width: 21px;
+               height: 35px;
+               position: absolute;
+               left: 0px;
+               top: 0px;
+               background: red;
+               font-size: 12px;
+             color: white;
+               transition: all .5s;
+           }
+           .content .auto .Rotation ul li:nth-child(1) :hover span{
+               top:-12px ;
+           }
+           .content .auto .Rotation ul li:nth-child(1){
+               width: 220px;
+               height: 190px;
+               margin: 0px 9px;
+           }
+           .content .auto .Rotation ul .tj {
+               width: 200px;
+               height:47px ;
+               background: white;
+               position: absolute;
+               bottom: -44px;
+               color: black;
+               line-height: 30px;
+           }
+           .content .auto .Rotation ul .Notice{
+               background: white;
+               padding: 10px;
+               text-align: center;
+               margin: 0px 10px;
+               position: relative;
+           }
+           .content .auto .Rotation ul .Notice h2{
+               font-weight: 900;
+               margin-top: 15px;
+               height: 60px;
+           }
+           .content .auto .Rotation ul .Notice p{
+               height: 40px;
+               display: block;
+               line-height: 22px;
+                overflow: hidden;
+                margin: 23px 0;
+             /*  white-space: noraml;
+               text-overflow: ellipsis;
+               */
+           }
+           .content .auto .Rotation ul .Notice .arrow{
+               display: block;
+               width: 41px;
+               height: 5px;
+               background: url("../images/content\ auto\ jiantou.png")no-repeat;
+               position: absolute;
+                bottom: 27px;
+                left: 160px;
+                transition: all .3s ease ;
+           }
+           .content .auto .Rotation ul .Notice:hover h2 {
+               color: #E6C393;
+           }
+           .content .auto .Rotation ul .Notice:hover .arrow{
+              animation: arrow 0.5s ease ;
+           }
+           @keyframes arrow {
+               25%{
+                   transform:translateX(5px);
+               }
+               50%{
+                   transform:translateX(0px);
+               }
+               70%{
+                   transform:translateX(3px);
+               }
+               100%{
+                   transform:translateX(0px);
+               }
+           }
+           .content .auto .Rotation ul li:nth-child(9){
+               width: 200px;
+               height: 190px;
+               margin-right: 26px;
+           }
+           .content .auto .Rotation ul li:nth-child(9) div{
+               position: relative;
+               margin-left: 10px;
+           }
+           .content .auto .Rotation ul li:nth-child(9) div img{
+               width: 220px;
+               height: 190px;
+           }
+           .content .auto .Rotation ul  li:nth-child(9) div span{
+               display: inline-block;
+               width: 21px;
+               height: 35px;
+               position: absolute;
+               left: 0px;
+               top: 0px;
+               background: #E6C393;
+               font-size: 12px;
+             color: white;
+               transition: all .5s;
+           }
+           .content .auto .Rotation ul li:nth-child(9):hover div span{
+               top:-12px ;
+           }
+           .content .auto .Rotation ul  li:nth-child(9) div p{
+              
+               display: inline-block;
+               width: 100%;
+               height: 30px;
+               position: absolute;
+               left: 0px;
+               bottom: -3px;
+               color: white;
+               text-align: center;
+           }
+           .content .auto .Rotation .moer{
+               width: 95%;
+             line-height: 34px;
+               text-align: right;
+               position: absolute;
+               bottom: 0px;
+           }
+           .content .auto .Rotation .moer a{
+               color: white;
+               margin: 0 10px;
+           }
+           .content .auto .Rotation .moer a:hover{
+               text-decoration: underline;
+           }
+           .content .auto .Rotation .moer span{
+               display: inline-block;
+               border:1px solid white;
+               height: 15px;
+               vertical-align: -4px;
+           }
+           .content .auto .Rotation .moer img {
+               margin-right: 6px;
+                vertical-align: -3px;
+           }

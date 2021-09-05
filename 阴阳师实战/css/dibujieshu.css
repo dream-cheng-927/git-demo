@@ -1,0 +1,273 @@
+
+
+
+/* 阿里字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../end-font-flmay/font_daxp9k1bpba/iconfont.eot');
+    src: url('../end-font-flmay/font_daxp9k1bpba/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../end-font-flmay/font_daxp9k1bpba/iconfont.woff2') format('woff2'),
+        url('../end-font-flmay/font_daxp9k1bpba/iconfont.woff') format('woff'),
+        url('../end-font-flmay/font_daxp9k1bpba/iconfont.ttf') format('truetype'),
+        url('../end-font-flmay/font_daxp9k1bpba/iconfont.svg#iconfont') format('svg');
+    }
+    .iconfont {
+    font-family: "iconfont" !important;
+  
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+
+
+
+            /*   底部   */
+            .end{
+                width: 1920px;
+                height: 927px;
+                background: url("../images/end.png") ;
+            }
+            .end  .end-wrap .bg{
+                width: 71px;
+                height: 203px;
+                background: url("../images/content\ left.png") no-repeat -1030px -297px;
+                position: absolute;
+                top: 314px;
+                 left: 222px;
+
+            }
+            .end .end-wrap{
+                width: 1180px;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+            }
+            .end .end-wrap .end-animation{
+                width: 600px;
+                height: 300px;
+                position: absolute;
+                right: 39px;
+                top: 248px;
+            }
+            .end .end-wrap .end-animation .end-animation-wrap{
+                width:234px ;
+                height: 232px;
+                position: absolute;
+                right: 0px;
+                bottom: 21px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .end .end-wrap .end-animation:hover .end-animation-wrap .animation-1{
+                right: -123px;
+                top: -195px;
+                transition: all 1.2s;
+            }
+            
+            .end .end-wrap .end-animation .end-animation-wrap .animation-1{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: url("../images/end\ img.png")no-repeat -21px -22px;
+                position: absolute;
+                right: -48px;
+                top: -35px;
+                z-index: 2;
+                transition: all 1.2s;
+            }
+            .end .end-wrap .end-animation  .animation-2{
+                width: 234px;
+                 height: 232px;
+                border-radius: 50%;
+                background: url("../images/end\ img2.png")no-repeat -21px -22px;
+                position: absolute;
+                top: 47px;
+                  right: -2px;
+            }
+            .end .end-wrap .end-animation  .animation-3{
+                width: 344px;
+                height: 337px;
+                /* border-radius: 50%; */
+                background: url("../images/end\ img3.png")no-repeat;
+                position: absolute;
+                top: -19px;
+                right: -43px;
+                z-index: 5;
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            @keyframes animation-3{
+                0%{transform: scale(0.75);opacity: 1;}
+                90%{transform: scale(1.25);opacity: 0;}
+                /* 55%{transform: scale(0.75);opacity: 0;}
+                80%{transform: scale(1.25);opacity: 0;} */
+                100%{transform: scale(0.75);opacity: 0;}
+            }
+           
+            .end .end-wrap .end-animation:hover .animation-3{
+                animation: animation-3 1.5s linear .3s infinite;  
+            }
+            
+            .end .end-wrap .end-animation  .animation-4{
+                width: 234px;
+                 height: 232px;
+                border-radius: 50%;
+                background: url("../images/end\ img4.png")no-repeat -69px -72px;
+                position: absolute;
+                top: 47px;
+                 right: 0px;
+                 z-index: 1;
+                 transform: scale(0.5);
+                 opacity: 0;
+                transition: all 2s;
+            }
+            .end .end-wrap .end-animation:hover .animation-4{
+                transform: scale(1);
+                opacity: 1;
+
+            }
+            .end .end-wrap .end-animation .animation-5{
+                width: 266px;
+                 height: 262px;
+                border-radius: 50%;
+                background: url("../images/end\ img5.png")no-repeat -4px -4px;
+                position: absolute;
+                top: 28px;
+                 right: -17px;
+                 animation: animation-5 3s linear infinite;
+            }
+            @keyframes animation-5 {
+                0%{transform: scale(0.8);}
+                50%{transform: scale(1);}
+                100%{transform: scale(0.8);}
+            }
+            .end .end-wrap .end-text{
+                width: 100%;
+                height: 200px;
+                position: absolute;
+                bottom: 0px;
+                margin-bottom: 52px;
+
+            }
+            .end .end-wrap .end-text .end-text-one{
+                width: 173px;
+                height: 30px;
+                margin: 5px auto;
+                color: white;
+                position: relative;
+                cursor: pointer;
+                font-size: 13px;
+                
+            }
+            .end .end-wrap .end-text .end-text-one .iconfont{
+                font-size: 15px;
+                color: white;
+                font-size: 20px;
+                margin-right: 5px;
+            }
+            .end .end-wrap .end-text .end-text-one .iconfont:hover{
+                color: red;
+            }
+            .end .end-wrap .end-text .end-text-one ul{
+                width: 200px;
+                height: 30px;
+                position: absolute;
+                display: flex;
+                right: -195px;
+                 bottom: -15px;
+                 opacity: 0;
+                 transition: all .5s;
+            }
+            .end .end-wrap .end-text .end-text-one .hide9:hover ~ul{
+                opacity:1;
+            }
+            .end .end-wrap .end-text .end-text-one ul:hover {
+                opacity:1;
+            }
+            .end .end-wrap .end-text .end-text-one ul li{
+                width: 100px;
+                height: 100%;
+                line-height: 20px;
+                font-size: 13px;
+                background-color: white;
+            }
+            .end .end-wrap .end-text .end-text-one ul li:hover{
+                background-color: #ccc;
+            }
+            .end .end-wrap .end-text .end-text-one ul li:nth-of-type(1) a{
+                background: url("../images/end\ bg.png")no-repeat 5px 6px;
+                color: black;
+                padding-left: 35px;
+                height: 100%;
+                display: inline-block;
+                line-height: 30px;
+            }       
+            .end .end-wrap .end-text .end-text-one ul li:nth-of-type(2) a{
+                background: url("../images/end\ bg.png")no-repeat 5px -471px;
+                color: black;
+                padding-left: 35px;
+                height: 100%;
+                display: inline-block;
+                line-height: 30px;
+            }     
+
+              .end .end-wrap .end-text .end-text-two{
+                  width: 100%;
+                  height: 50px;
+                  line-height: 50px;
+                  display: flex;
+                  color: white;
+                  margin-top: 15px;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on1{
+                  width: 333px;
+                  margin-left: 25px;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on2{
+                  width: 700px;
+                  height: 50px;
+                  font-size: 12px;
+                  line-height: 20px;
+                  margin-left: 20px;
+                  position: relative;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on2 span::before{
+                content: "";
+                width: 7px;
+                height: 1px;
+                display: inline-block;
+                border-top: 1px solid white;
+                margin: 3px 5px 3px 0px;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on2 span:nth-of-type(1)::before{
+                  content:"" ;
+                  width: 0px;
+                  height: 0px;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on2 .two-on2-1{
+                  width: 140px;
+                  height: 20px;
+                  text-align: center;
+                  position: absolute;
+                  bottom: 10px;
+                  right: 20px;
+                  background-color: #610000;
+              }
+              .end .end-wrap .end-text .end-text-two .two-on2 span:hover,
+              .end .end-wrap .end-text .end-text-three span:hover,
+              .end .end-wrap .end-text .end-text-two .two-on2 .two-on2-1:hover{
+                text-decoration: underline;
+              }
+
+
+              .end .end-wrap .end-text .end-text-three{
+                  width: 100%;
+                  height: 106px;
+                font-size: 12px;
+                color: #ccc;
+                padding-left: 21px;
+              }
+              .end .end-wrap .end-text .end-text-three span{
+                  color: white;
+              }

@@ -1,0 +1,242 @@
+
+            /* 游戏攻略 */
+
+
+            /* 上部分 */
+            .Introduction-game {
+                width: 1180px;
+                height: 500px;
+                margin: 50px auto 0px;
+                background-color: #c2a060;
+                position: relative;
+                background: url("../images/youxigonglue\ bg.jpg") 0 174px no-repeat
+            }
+           .Introduction-game .bg{
+               width: 55px;
+               height: 145px;
+            background: url("../images/content\ left.png")no-repeat -876px -532px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .Introduction-game .top{
+                width: 1080px;
+                height: 209px;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 100px;
+                
+            }
+            .Introduction-game .top .top-one,
+            .Introduction-game .top .top-two,
+            .Introduction-game .top .top-three{
+                width: 340px;
+                height: 209px;
+                background-color: pink;
+                cursor: pointer;
+                position: relative;
+             
+            }
+            .Introduction-game .top .bg-one,
+            .Introduction-game .top .bg-two{
+                display: inline-block;
+                width: 40px;
+                height: 90px;
+                background: url("../images/youxigonglue\ top1.png")no-repeat;
+                font-size: 14px;
+                text-align: center;
+                color: black;
+                transition: all .5s;
+            }
+            .Introduction-game .top .bg-one i,
+            .Introduction-game .top .bg-two i{
+                width: 20px;
+                height: 90px;
+                display: inline-block;
+            }
+            .Introduction-game .top .bg-one{
+                position: absolute;
+                left: 20px;
+                top: 0px;
+            }
+            .Introduction-game .top .bg-two{
+                position: absolute;
+                left: 65px;
+                top: 20px;
+            }
+            .Introduction-game .top .top-one:hover .bg-one,
+            .Introduction-game .top .top-one:hover .bg-two,
+            .Introduction-game .top .top-two:hover .bg-one,
+            .Introduction-game .top .top-two:hover .bg-two,
+            .Introduction-game .top .top-three:hover .bg-one,
+            .Introduction-game .top .top-three:hover .bg-two{
+                transform: translateY(-15px);
+            }
+
+            /* 中间部分 */
+            .Introduction-game .middle{
+                width: 100%;
+                height: 155px;
+                position: relative;
+                text-align: center;
+            }
+           
+            .Introduction-game .middle .middle-one {
+                width: 154px;
+                height: 44px;
+                line-height: 44px;
+                /* color:#80BFA0; */
+                color: white;
+                margin: 31px 0px 0px 120px;
+                position:absolute;
+            }
+            .Introduction-game .middle .on1{
+                left: 0px;
+                top: -75px;
+            }
+            .Introduction-game .middle .on2{
+                left: 154px;
+                top: -75px;
+            }
+            .Introduction-game .middle .on3{
+                left: 308px;
+                top: -75px;
+            }
+            .Introduction-game .middle .on4{
+                left: 462px;
+                top: -75px;
+            }
+            .Introduction-game .middle .on5{
+                left: 616px;
+                top: -75px;
+            }
+            .Introduction-game .middle .middle-one span{
+                display: block;
+                width: 71px;
+                height: 4px;
+                display: none;
+                margin: 0 auto;
+                background: url("../images/content\ left.png")no-repeat -1067px -870px;
+                position: absolute;
+                left: 43px;
+                bottom: 3px;
+            }
+            .Introduction-game .middle .middle-two{
+                width: 163px;
+                height: 44px;
+                border: 2px solid #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 44px;
+                position: absolute;
+                color: #fff;
+                top: -56px;
+                right: 40px;
+                cursor: pointer;
+            }
+            .Introduction-game .middle .middle-two:hover{
+                text-decoration: underline;
+            }
+            .Introduction-game .middle .middle-two::after{
+                content: '';
+                position: absolute;
+                top: 1px;
+                right: 2px;
+                width: 5px;
+                height: 5px;
+                background: url("../images/content\ left.png")no-repeat -1153px -492px;
+            } 
+            .Introduction-game .middle .middle-one:hover{
+                color: #80BFA0;
+                background-color: #fff;
+            }
+            .Introduction-game .middle .middle-one:hover span{
+                display: block;
+            }
+             
+             /*    底部   */
+             .Introduction-game .bottom{
+                width: 1058px;
+                height: 124px;
+                border: 2px solid #81c0a1;
+                border-top: 0;
+                padding: 30px 0 0 118px;
+                margin-top: 76px;
+                /* overflow: hidden; */
+             }
+             .Introduction-game .bottom .bottom-on1{
+                 /* width: 5209px;
+                 display:flex;*/
+                 position: relative;
+                 /* left: 0px;  */
+             }
+             .Introduction-game .bottom  ul{
+                 width: 1058px;
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+             }
+             .Introduction-game .bottom  ul li{
+                width: 320px;
+                height: 40px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                margin-right: 30px;
+                overflow: hidden
+             }
+             .Introduction-game .bottom  ul .bottom-bg{
+                width: 2px;
+                height: 40px;
+                background: #ccc;
+                display: block;
+                float: left;
+                margin-right: 10px;
+                transition: all .3s;
+             }
+             .Introduction-game .bottom  ul .bottom-text{
+                display: inline-block;
+                width: 300px;
+                height: 40px;
+             }
+             .Introduction-game .bottom  ul .bottom-text p{
+                 font-size: 14px;
+                 overflow: hidden;
+                 text-overflow:ellipsis;
+                 white-space: nowrap;
+             }
+             .Introduction-game .bottom  ul .bottom-text span{
+                 font-size: 12px;
+             }
+             .Introduction-game .bottom  ul li:hover .bottom-bg{
+                 width: 6px;
+                 background: #80BFA0;
+             }
+             .Introduction-game .bottom  ul li:hover .bottom-text p{
+                 color: #80BFA0;
+             }
+             .Introduction-game .bottom .bottom-two,
+             .Introduction-game .bottom .bottom-three,
+             .Introduction-game .bottom .bottom-four,
+             .Introduction-game .bottom .bottom-five{
+                 display: none;
+             }
+             .Introduction-game .bottom .bottom-two,
+             .Introduction-game .bottom .bottom-three,
+             .Introduction-game .bottom .bottom-four,
+             .Introduction-game .bottom .bottom-five{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+             }
+             .Introduction-game .middle .on2:hover~.bottom .bottom-on1 .bottom-two,
+             .Introduction-game .middle .on3:hover~.bottom .bottom-on1 .bottom-three,
+             .Introduction-game .middle .on4:hover~.bottom .bottom-on1 .bottom-four,
+             .Introduction-game .middle .on5:hover~.bottom .bottom-on1 .bottom-five{
+                 display: block;
+             }  
+             .Introduction-game .middle .on2:hover~.bottom .bottom-on1 .bottom-one,
+             .Introduction-game .middle .on3:hover~.bottom .bottom-on1 .bottom-one,
+             .Introduction-game .middle .on4:hover~.bottom .bottom-on1 .bottom-one,
+             .Introduction-game .middle .on5:hover~.bottom .bottom-on1 .bottom-one{
+                 display: none;
+             }  

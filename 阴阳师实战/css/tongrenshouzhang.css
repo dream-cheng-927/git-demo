@@ -1,0 +1,429 @@
+
+             /* 同人手帐 */
+             .Account-person-top{
+                width: 1180px;
+                height: 500px;
+                margin: 50px auto;
+                position: relative;
+                background: url("../images/tongrenshouzhang\ bg.jpg")no-repeat 0 bottom;
+            }
+            .Account-person-top .bg{
+                width: 53px;
+                height: 144px;
+                /* position: absolute; */
+                background: url("../images/content\ left.png")no-repeat -1003px -532px;
+            }
+            .Account-person-top .left{
+                width: 300px;
+                height: 456px;
+                position: absolute;
+                top: 0px;
+                 left: 120px;
+            }
+            .Account-person-top .left .bg{
+                width: 95px;
+                height: 23px;
+                float: left;
+                background: url("../images/content\ left.png")no-repeat -1045px -687px;
+            }
+            .Account-person-top .left .left-one{
+                width: 100px;
+                height: 20px;
+                border-left: 1px solid #ccc;
+                padding-left: 20px;
+                float: right;
+            }
+            .Account-person-top .left .left-one span:hover{
+                background: url("../images/content\ left.png")no-repeat -1150px -687px;
+            }
+            .Account-person-top .left .left-one span{
+                display: block;
+                width: 15px;
+                height: 20px;
+                float: left;
+                margin-right: 10px;
+                background: url("../images/content\ left.png") no-repeat -900px -870px;
+            }
+            .Account-person-top .left .left-two{
+                width: 300px;
+                height: 415px;
+                margin-top: 41px;
+               overflow: hidden;
+            }
+            @keyframes move2 {
+                0%{transform: translateX(0px);}
+                15%{transform: translateX(0px);}
+                25%{transform: translateX(-310px);}
+                40%{transform: translateX(-310px);}
+                45%{transform: translateX(-620px);}
+                60%{transform: translateX(-620px);}
+                65%{transform: translateX(-930px);}
+                80%{transform: translateX(-930px);}
+                
+                91%{transform: translateX(0px);}
+                100%{transform: translateX(0px);}
+            }
+            .Account-person-top .left .left-two .one{
+                width: 1240px;
+                display: flex;
+                justify-content: space-between;
+                animation: move2 15s linear infinite;
+            }
+            
+            .Account-person-top .left .left-two img{
+               width: 300px;
+               height: 415px;
+               float: left;
+            }
+
+            /* 右边部分 */
+
+            /* 上部分 */
+            .Account-person-top .right{
+                width: 720px;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            .Account-person-top .right .bg{
+               width: 95px;
+               height: 23px;
+               background: url("../images/content\ left.png") no-repeat -615px -870px;
+            }
+            .Account-person-top .right .on1{
+                height: 30px;
+                line-height:30px ;
+
+               position: absolute;
+               top: 0px;
+               right:0px;
+            }
+            .Account-person-top .right .on1 .on1-one
+           {
+                display: block;
+                float: left;
+                width: 85px;
+                height: 15px;
+                line-height: 15px;
+                color: #c2a060;
+                padding-left: 20px;
+                font-size: 12px;
+                border-left: 1px solid #c2a060;
+            }
+            .Account-person-top .right .on1 .on1-two{
+                display: block;
+                float: left;
+                width: 85px;
+                height: 15px;
+                line-height: 15px;
+                color: #c2a060;
+                padding-left: 20px;
+                font-size: 12px;
+                border-left: 1px solid #c2a060;
+            }
+            .Account-person-top .right .on1 .on1-one:hover,
+            .Account-person-top .right .on1 .on1-two:hover{
+               text-decoration: underline;
+            }
+            .Account-person-top .right .on1 .on1-two::after{
+                content: "";   
+                width: 1px;
+                height: 15px;
+                display: inline-block;
+                border-right: 1px solid #c2a060;
+                margin-left:0px;
+                margin-left: 10px;
+            }
+            /* 下部分 */
+            .Account-person-top .right .on2-warp{
+                margin-top:16px;
+               position: relative;
+            }
+            .Account-person-top .right .on2{
+               width: 700px;
+               height: 100%;
+               margin-left: 21px;
+               position: relative;
+            }
+            .Account-person-top .right .on2 .on2-one{
+                display: flex;
+                justify-content: space-between;
+                /* transition: all .5s; */
+            }
+            .Account-person-top .right .on2 .on2-one .one-one{
+                cursor: pointer;
+            }
+            .Account-person-top .right .on2 .on2-one .one-one:hover .img {
+                box-shadow:2px 6px 32px #ccc;
+                border: 1px solid #AEDDE5;
+            }
+            .Account-person-top .right .on2 .on2-one .one-one .img{
+                width: 220px;
+                height: 353px;
+                border: 1px solid rgba(0, 0, 0, 0);
+                box-sizing: border-box;
+              
+            }
+            .Account-person-top .right .on2 .on2-one .text{
+               width: 220px;
+               box-sizing: border-box;
+               padding-left: 18px;
+               margin: 10px 0 0 15px;
+               border-left: 1px solid black;
+            }
+            .Account-person-top .right .on2 .on2-one .text .text-one{
+               font-size: 15px;
+               font-weight: bold;
+            }
+            .Account-person-top .right .on2 .on2-one .text .text-two{
+                font-size: 12px;
+            }
+            .Account-person-top .right .on2 .on2-one .one-one .bga{
+                width: 150px;
+                height: 20px;
+                padding-left: 25px;
+                margin-left: 38px;
+                background: url("../images/tongrenshouzhang\ bg1.png")no-repeat;
+            }
+            .Account-person-top .right .on2 .list-two,
+            .Account-person-top .right .on2 .list-three,
+            .Account-person-top .right .on2 .list-four{
+                position: absolute;
+                top: 0px;
+                opacity: 0;
+            }
+            /* 动画 */
+            .Account-person-top .right .on2 .list-one{
+                animation:move3 17s  infinite ;
+                
+               
+            }
+            @keyframes move3 {
+               0%{opacity: 1;}
+               10%{opacity: 1;}
+               20%{opacity: 1;}
+               30%{opacity: 0;}
+               40%{opacity: 0;}
+               50%{opacity: 1;}
+               60%{opacity: 0;}
+               70%{opacity: 0;}
+                80%{opacity: 0;}
+               90%{opacity: 0;}
+               100%{opacity: 0;}
+            }
+            .Account-person-top .right .on2 .list-two{
+                animation:move4 17s  infinite ;
+                
+              
+            }
+            @keyframes move4 {
+               0%{opacity: 0;}
+               10%{opacity: 0;}
+               20%{opacity: 0;}
+               25%{opacity: 0;}
+               30%{opacity: 1;}
+               40%{opacity: 1;}
+               45%{opacity: 0;}
+               50%{opacity: 0;}
+               60%{opacity: 0;}
+               70%{opacity: 0;}
+               80%{opacity: 0;}
+               90%{opacity: 0;}
+               100%{opacity: 0;}
+            }
+            .Account-person-top .right .on2 .list-three{
+                animation:move5 17s  infinite ;
+                
+              
+            }
+            @keyframes move5 {
+               0%{opacity: 0;}
+               10%{opacity: 0;}
+               20%{opacity: 0;}
+               30%{opacity: 0;}
+               40%{opacity: 0;}
+               50%{opacity: 0;}
+               60%{opacity: 1; }
+               70%{opacity: 1;}
+                80%{opacity: 1;}
+               90%{opacity: 0;}
+               100%{opacity: 0;}
+               
+                
+            }
+            .Account-person-top .right .on2 .list-four{
+                animation:move6 17s  infinite ;
+               
+             
+            }
+            @keyframes move6 {
+               0%{opacity: 0;}
+               10%{opacity: 0;}
+               20%{opacity: 0;}
+               30%{opacity: 0;}
+               40%{opacity: 0;}
+               50%{opacity: 0;}
+               60%{opacity: 0;}
+               70%{opacity: 0;}
+                80%{opacity: 0;}
+               90%{opacity: 1;}
+               100%{opacity: 1;}
+            }
+            .Account-person-top .right .on2 .list-one:hover,
+            .Account-person-top .right .on2 .list-two:hover,
+            .Account-person-top .right .on2 .list-three:hover,
+            .Account-person-top .right .on2 .list-four:hover{
+               animation-play-state:paused;
+            }
+
+            /* 底部 */
+            .Account-person-top .right .Change{
+                width: 66px;
+                height: 20px;
+                font-size: 12px;
+                line-height: 20px;
+                position: absolute;
+                bottom: 15px;
+                right:33px;
+            }
+            .Account-person-top .right .Change .Change-bg{
+                display: inline-block;
+                width: 21px;
+                height: 15px;
+                vertical-align: middle;
+                background: url("../images/content\ left.png")no-repeat -950px -870px;
+            }
+            .Account-person-top .right .Change:hover .Change-bg{
+                transform: rotateZ(360deg);
+                transition: all .3s;
+            }
+            .Account-person-top .right .Change:hover span{
+                text-decoration: underline;
+            }
+           /* 同人手帐   2 */
+           .Account-person-bottom{
+               width: 1180px;
+               height: 228px;
+               margin: 0px auto;
+           }
+           .Account-person-bottom .top{
+               width: 530px;
+               height: 30px;
+               margin: 0 auto;
+               display: flex;
+               justify-content: space-between;
+           }
+           .Account-person-bottom .top .bg{
+               width: 130px;
+               height: 23px;
+               
+               border-right: 1px solid black;
+               background: url("../images/tongrendachu\ bg.png")no-repeat;
+           }
+           .Account-person-bottom .top .one,
+           .Account-person-bottom .top .two,
+           .Account-person-bottom .top .three{
+               width: 125px;
+               font-size: 12px;
+               color: #7FC4D2;
+               position: relative;
+               text-align: center;
+               cursor: pointer;
+           }
+           .Account-person-bottom .top .one .on1{
+               display: inline-block;
+               width: 24px;
+               height: 17px;
+               vertical-align: middle;
+               background: url("../images/tongrendachu\ img1.png")no-repeat;
+           }
+           .Account-person-bottom .top  .on2{
+               display: inline-block;
+               width: 24px;
+               height: 21px;
+               vertical-align: middle;
+               background: url("../images/tongrendachu\ img2.png")no-repeat;
+           }
+           .Account-person-bottom .top .two img,
+           .Account-person-bottom .top .three img{
+                position: absolute;
+                height: 100px;
+                left: 122px;
+                top: -38px;
+                border: 1px solid #97d0db;
+                border-radius: 50%;
+                z-index: 1;
+                display: none;
+           }
+           .Account-person-bottom .top .two:hover img,
+           .Account-person-bottom .top .three:hover img{
+               display: block;
+           }
+           /* 下面部分 */
+           .Account-person-bottom .bottom{
+               width: 1180px;
+               height:210px;
+               margin: 0 auto;
+               background: url("../images/tongrendachu\ bg\ 1.jpg")no-repeat 23px 47px;
+           }
+           .Account-person-bottom .bottom .wrap{
+               width: 1180px;
+               height: 170px;
+               display: flex;
+               margin-top: 20px;
+               justify-content: space-between;
+               position: relative;
+           }
+           .Account-person-bottom .bottom .wrap .wrap-one{
+               width: 220px;
+               height: 155px;
+               position: relative;
+               text-align: center;
+                font-size: 14px;
+               cursor: pointer;
+               background: url("../images/tongrendachu\ bg\ 2.jpg")no-repeat;
+           }
+           .Account-person-bottom .bottom .wrap .wrap-one div{
+               border-radius: 50%;
+               width: 100px;
+               height: 100px;
+               overflow: hidden;
+               border: 1px solid #ccc;
+               position: relative;
+               margin: 0px auto;
+               top: -11px;
+           }
+           .Account-person-bottom .bottom .wrap .wrap-one .bg{
+               width: 118px;
+               height: 110px;
+               border-radius: 50%;
+               border-width: 0px;
+               position: absolute;
+               left: 51px;
+               top: -15px;
+               transition:all .5s;
+               background: url("../images/content\ left.png")no-repeat -239px -741px;
+           }
+           .Account-person-bottom .bottom .wrap .wrap-one:hover .bg{
+               transform: rotateZ(90deg);
+           }
+           .Account-person-bottom .bottom .bgr{
+               width: 100px;
+               height: 30px;
+               font-size: 12px;
+               position: absolute;
+               right: 0px;
+               bottom: -15px;
+           }
+           .Account-person-bottom .bottom .bg-one{
+               display: inline-block;
+               width: 21px;
+                height: 15px;
+                vertical-align: middle;
+                background: url("../images/content\ left.png")no-repeat -950px -870px;
+           }
+           .Account-person-bottom .bottom .wrap .bgr:hover .bg-one{
+               transform:rotateZ(360deg);
+               transition: all .3s;
+           }

@@ -1,0 +1,8 @@
+/* 默认样式 */
+body{
+    max-width: 1920px;
+    min-width: 1280px;
+}
+body,h1,h2,h3,h4,h5,h6,ul,ol,p{margin:0;font-weight: normal}
+ul,ol{padding:0; list-style:none;}
+a{text-decoration: none;}

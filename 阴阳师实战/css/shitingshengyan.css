@@ -1,0 +1,102 @@
+
+            /*   视听盛宴   */
+            .regard{
+                width: 1180px;
+                height: 262px;
+                margin: 30px auto;
+            }
+            .regard .bg{
+                width: 55px;
+                height: 146px;
+                float: left;
+                background: url("../images/content\ left.png") no-repeat -812px -532px;
+            }
+            .regard .right{
+                width: 1090px;
+                height: 215px;
+                float: right;
+                background: url("../images/tongrendachu\ bg\ 1.jpg")no-repeat 0px 80px;
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+            }
+            .regard .right .right-one{
+                width: 250px;
+                height: 141px;
+                position: relative;
+                cursor: pointer;
+                margin-left: 30px;
+            }
+            .regard .right .right-one .one{
+                width: 100px;
+                height: 30px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                 line-height: 30px;
+                 position: absolute;
+                right: -12px;
+                bottom: -6px;
+               
+            }
+            .regard .right .right-one .one span{
+                width:16px;
+                height: 12px;
+                display: inline-block;
+                margin-right: 5px;
+                background: url("../images/shitingshengyan5bg.png")no-repeat;
+            }
+            .regard .right .right-one .one-two,
+            .regard .right .right-one .one-on1
+            {
+                width: 180px;
+            }
+            .regard .right .right-one:hover .one span{
+                background: url("../images/shitingshengyan6bg.png") no-repeat;
+            }
+            .regard .right .right-two{
+                width: 210px;
+                height: 40px;
+                line-height: 40px;
+               
+                color: #c2a060;
+                font-size: 14px;
+                background: #fff;
+                box-sizing: border-box;
+                 padding-left: 56px;
+                border: 1px solid #c2a060;
+               
+                position: absolute;
+                bottom: -20px;
+                 left: 41%;
+            }
+            .regard .right .right-two span{
+                display: inline-block;
+                width: 41px;
+                height: 5px;
+                background: url("../images/content\ auto\ jiantou.png")no-repeat;
+                position: absolute;
+                left: 134px;
+                top: 17px;
+                transition: all .3s ease;
+            }
+            .regard .right .right-two::after{
+                content: "";
+                width: 1px;
+                height: 41px;
+                right: -5px;
+                border-left:1px solid #c2a060;
+                position: absolute;
+            }
+            .regard .right .right-two::before{
+                content: "";
+                width: 208px;
+                height: 38px;
+                right: -4px;
+                bottom: -4px;
+                border-bottom: 1px solid #c2a060;
+                position: absolute;
+            }
+            .regard .right .right-two:hover span{
+                animation: arrow 0.5s ease;
+            }

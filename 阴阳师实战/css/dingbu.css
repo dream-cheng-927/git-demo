@@ -1,0 +1,425 @@
+
+        /* 顶部布局 */
+        .nav-top{
+            width: 100%;
+            height: 60px;
+            background-color:white;
+            line-height: 60px;
+            position: relative;
+          
+        }
+        .nav-top .left{
+            width: 190px;
+            height: 59px;
+            background-color: red;
+            color: white;  
+            text-align: center; 
+            line-height:59px;
+            font-size: 14px;
+            float: left;
+            z-index: 5;
+        }
+        .nav-top .left .bg{
+            display:inline-block;
+            width:25px ;
+            height: 15px;
+            background: url("../images/sprite-w_dd519f4.png") no-repeat -90px -303px;
+            margin-right: 10px;
+        }
+        .nav-top .middle{
+            width: 1540px;
+            height: 60px;
+            margin: 0 auto;
+            border-right:1px solid rgba(0, 0, 0, 0.4) ;
+            position: relative;  
+        }
+        .nav-top .middle .bg{
+            display: inline-block;
+            width: 133px;
+            height: 47px;
+            margin: 0 auto;
+            background: url("../images/logo_b5525b7.png") no-repeat 0px 0px;
+            position: absolute;
+            left: 50%;
+            top:7px;
+        }
+         .nav-top .right{
+             width: 198px;
+             height: 60px;
+            text-align: center;
+            font-size:12px;
+            color: black;
+          position: absolute;
+          top:0px;
+          right: 0px; 
+          /* float: left; */
+          border-left: 1px solid rgba(0, 0, 0, 0.4);
+          overflow: hidden;
+           }
+         .nav-top .right .txt,.nav-top .right .txt1{
+            width: 198px;
+             height: 55px;
+            color: black;
+            display: block;
+            transition: all .5s;
+         }
+         .nav-top .right .txt{
+            animation: move 5s  infinite;
+            position: absolute;
+            top: 0px;
+         }
+        @keyframes move {
+            0%{
+                top: 0px;
+            }
+            20%{
+                top: 0px;
+            }
+            40%{
+                top: 0px;
+            }
+            60%{
+                top:-62px;
+            }
+            80%{
+                top: -62px;
+            }
+
+            100%{
+                top: -62px;
+            }
+        }
+         .nav-top .right .txt:hover{
+             color: red;
+             border-bottom: 1px solid red;
+         }
+         .nav-top .right .txt1:hover{
+            color: red;
+             border-bottom: 1px solid red;
+         }
+         .nav-top .right .txt1{
+             position: absolute;
+             top: 62px;
+           animation: move1 5s  infinite;
+         }
+         @keyframes move1 {
+             0%{
+                top: 62px;
+             }
+             20%{
+                top: 62px;
+             }
+             40%{
+                 top: 62px;
+             }
+             80%{
+                 top: 0px;
+             }
+             100%{
+                top: 0px;
+             }
+         }
+        .left:hover~.recommend,.recommend .more,.recommend .more1{
+           
+             top: 0px;
+             transition: all .5s;
+          
+         }
+         .left:hover~.recommend{
+            top: 60px;
+           z-index: 5;
+       }
+         .nav-top .recommend:hover{
+             top: 60px;
+             z-index: 5;
+         }
+
+
+
+          /* 全部游戏目录 */
+          .nav-top .recommend{
+             width: 100%;
+             background:rgba(242, 242, 242, 0.9);
+            height: 526px;
+            /* position: absolute;
+            top: -526px; */
+            position: absolute;
+            top:-525px;
+           z-index: -1;
+         }
+         .nav-top .recommend .list{
+             width: 1330px;
+             height: 526px;
+             margin: 0 auto;
+            opacity: 0.9;
+             position: relative;
+             
+         }
+         .nav-top .recommend .list .list1{
+             width: 500px;
+             /* height: 526px; */
+         }
+         .nav-top .recommend .list .list2{
+             width: 850px;
+             overflow: hidden;
+             position: absolute;
+             left: 310px;
+             transition: all .5s;
+         }
+         .nav-top .recommend .list .list3{
+             width: 226px;
+             height: 526px;
+             position: relative;
+             float: right;
+         }
+         .nav-top .recommend .list li div{
+             float: left;
+             width: 120px;
+             height: 526px;
+             box-sizing: border-box;
+         }
+         .nav-top .recommend .list li div a{
+             display: block;
+             width: 115px;
+             line-height:20px;
+             font-size:12px;
+             color:black;
+             position: relative;
+             margin-bottom:5px ;
+         }
+         .nav-top .recommend .list li div a:hover {
+            color: red;
+         }
+         .nav-top .recommend .list li div p{
+             font-size:14px;
+             margin: 5px 0 5px 0;
+         }
+         .nav-top .recommend .list li div .icon-hot{
+             display: inline-block;
+             width: 18px;
+             height: 9px;
+             background: url("../images/sprite-w_dd519f4.png") no-repeat -97px -152px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+         }
+         .nav-top .recommend .list li div .icon-noe{
+            display: inline-block;
+             width: 18px;
+             height: 9px;
+             background: url("../images/sprite-w_dd519f4.png") no-repeat -97px -276px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+         }
+         .nav-top .recommend .list li div .icon-new{
+            display: inline-block;
+             width: 18px;
+             height: 9px;
+             background: url("../images/sprite-w_dd519f4.png") no-repeat -97px -214px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+         }
+         .nav-top .recommend .list li div p{
+             width: 115px;
+             height: 20px;
+             line-height:20px;
+             font-weight: 900;
+         }
+         /* .nav-top .recommend .list li:nth-child(1){
+             width: 115px;
+         } */
+         .nav-top .recommend .list .list1 div:nth-child(2){
+             transition:all .5s;
+             padding: 90px 12px 0px 26px;
+            opacity: 0;
+         }
+         .nav-top .recommend .list  .list1 div:nth-child(3){
+            padding: 59px 0px 0px 0px;
+            position: absolute;
+            left: 130px;
+            transition: all 1s;
+            width: 160px;
+         }
+         .nav-top .recommend .list  .list3 div:nth-child(3){
+             margin-left: 20px;
+         }
+         .nav-top .recommend .list  .list3 div:nth-child(3) .bg{
+            display: block;
+            width: 120px;
+            height: 50px;
+            background: url("../images/logo_b5525b7.png") no-repeat center / 115px 36px;
+         }
+         .nav-top .recommend .list .list1 div:nth-child(4){
+             width: 20px;
+             height: 102px;
+             background: red;
+             margin-left:30px;
+             margin-top:190px;
+             font-size: 12px;
+             line-height: 16px;
+             text-align: center;
+             color: white;
+             z-index: 0;
+             transition: all .5s;
+             position: relative;
+         }
+         
+         .nav-top .recommend .list .list1 div:nth-child(5){
+            width: 35px;
+            height: 40px;
+            line-height: 40px;
+             background: red;
+             transition: all 1s;
+             position:absolute;
+             left: 270px;
+             top: 219px;
+             color: white;
+             opacity: 0;   
+             cursor: pointer;
+         }
+         .nav-top .recommend .list .list3 div:nth-child(1){
+             width: 20px;
+             height: 102px;
+             background: red;
+             margin-top:190px;
+             font-size: 12px;
+             line-height: 16px;
+             text-align: center;
+             color: white;
+             z-index: 0;
+             transition: all .5s;
+             position: relative;
+         }
+         .nav-top .recommend .list .list3 div:nth-child(2){
+            width: 35px;
+            height: 40px;
+            line-height: 40px;
+             background: red;
+             transition: all 1s;
+             position:absolute;
+             text-align: center;
+             left: -23px;
+             top: 220px;
+             color: white;
+             opacity: 0;   
+             cursor: pointer;
+         }
+         .nav-top .recommend  .more{
+           width: 32px;
+            height: 102px;
+            position: absolute; 
+            left: 539px;
+            top: 190px;
+            opacity: 0;
+            z-index: 1;
+            transition: all .5s;
+            cursor: pointer;
+        }
+        .nav-top .recommend  .more1{
+           width: 32px;
+            height: 102px;
+            position: absolute; 
+            left: 1380px;
+            top: 190px;
+            opacity: 0;
+            z-index: 1;
+            transition: all .5s;
+            cursor: pointer;
+        }
+         .nav-top .recommend .list .list1 div:nth-child(6){
+            width: 1px;
+            height: 460px;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+            float: left;
+            transition: all 0.6s;
+            margin-right: 20px;
+            position: absolute;
+           top: 66px;
+             left: 290px;
+         }
+         /* .nav-top .recommend .list .list2 div:nth-child(1){
+             border-right: 1px solid rgba(0, 0, 0, 0.15);
+         } */
+         .nav-top .recommend .list .list2 div:nth-child(2){
+            padding: 59px 0px 0px 15px;
+            position:relative;
+         }
+         .nav-top .recommend .list .list2 div:nth-child(1){
+             padding-left: 15px;
+             width: 136px;
+         }
+         .nav-top .recommend .list .list2 div:nth-child(2)::before{
+             content:" ";
+             height: 460px;
+             border-left: 1px solid rgba(0, 0, 0, 0.15);
+             position: absolute;
+             left: 0px;
+            top: 66px;
+         }
+         .nav-top .recommend .list .list2 div:nth-child(3),.nav-top .recommend .list .list2 div:nth-child(4),.nav-top .recommend .list .list2 div:nth-child(5),.nav-top .recommend .list .list2 div:nth-child(6),.nav-top .recommend .list .list2 div:nth-child(7){
+            padding: 90px 12px 0px 26px;
+         }
+         .nav-top .recommend .list .list2 div:nth-child(7){
+             position: absolute;
+             left: 715px;
+             display:none;
+         }
+         .more:checked~.list .list1 div:nth-child(2){
+             opacity: 1;
+         }
+         .nav-top .recommend .more:checked~.list .list1 div:nth-child(3){
+           /* left:220px ; */
+            margin-left:100px;
+            /* width: 150px; */
+         }
+         .nav-top .recommend .more:checked{
+             left: 672px;
+         }
+         .nav-top .recommend .more:checked~.list .list1 div:nth-child(5){
+           opacity: 1;
+            margin-left:118px;
+            transition: all .1s;
+         }
+         .nav-top .recommend .more1:checked~.list .list3 div:nth-child(2){
+             opacity: 1;
+             transition: all .1s;
+         }
+         .nav-top .recommend .more:checked~.list .list1 div:nth-child(6){
+             margin-left: 132px;
+         }
+         /* .nav-top .recommend .more:checked~.list .list2 div:nth-child(1){
+            z-index: -11;
+         } */
+         .nav-top .recommend .more:checked~.list .list1 div:nth-child(4), .nav-top .recommend .more1:checked~.list .list3 div:nth-child(1){
+           opacity: 0;
+           z-index: -10;
+           
+         }
+         .nav-top .recommend .more:checked~.list .list2 div:nth-child(1) p,.nav-top .recommend .more:checked~.list .list2 div:nth-child(1) a{
+            /* opacity: 0; */
+            display: none;
+         }
+         /* .nav-top .recommend .more:checked~.list .list1 {
+             z-index:10;
+         } */
+         .nav-top .recommend .more1:checked~.list .list2{
+             width: 870px;
+             left: 208px;
+         }
+         .nav-top .recommend .more1:checked~.list .list2 div:nth-child(7){
+             display: block;
+         }
+         .nav-top .recommend .more1:checked~.list .list1 div:nth-child(3) span, .nav-top .recommend .more1:checked~.list .list1 div:nth-child(4), .nav-top .recommend .more1:checked~.list .list1 div:nth-child(5), .nav-top .recommend .more1:checked~.list .list1 div:nth-child(6){
+             display: none;
+         }
+         .nav-top .recommend .more1:checked~.list .list2 div:nth-child(1)::before{
+            content:" ";
+             height: 460px;
+             border-left: 1px solid rgba(0, 0, 0, 0.15);
+             position: absolute;
+             left: 0px;
+            top: 66px;
+            margin-right:10px ;
+         }

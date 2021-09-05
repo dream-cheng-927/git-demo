@@ -1,0 +1,146 @@
+
+            /* 官方 */
+            .official{
+                width: 1180px;
+                height: 310px;
+                margin:100px auto 0px;
+            }
+            .official .off-wrap{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content:space-around;
+                background: #f2f2f2;
+            }
+            .official .off-wrap .one-on1{
+                width: 200px;
+                height: 180px;
+                position: relative;
+                display: flex;
+            }
+            .official .off-wrap .on{
+                width: 200px;
+                height: 200px;
+                position: relative;
+               top: -30px;
+               cursor: pointer;
+            }
+            .official .off-wrap .on .one-on1{
+                width: 100%;
+                height: 160px;
+                background: white;
+                border: 2px solid #ccc;
+                
+            }
+            .official .off-wrap .on .one-on1 p{
+                width: 20px;
+                height: 126px;
+                font-size: 12px;
+                margin-top: 40px;
+                margin-right: 5px;
+            }
+            .official .off-wrap .on .one-on1 .text{
+                margin-left:15px;
+
+            }
+            .official .off-wrap .on .one-on1 span{
+                width: 30px;
+                height: 50px;
+                font-size: 20px;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            .official .off-wrap .on p{
+                font-size: 14px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .official .off-wrap .on p .control{
+                color: #c2a060;
+            }
+            .official .off-wrap .on .one-on1 img{
+                height: 130px;
+                width: 130px;
+                position: absolute;
+                top: -35px;
+                right: -28px;
+            }
+            .official .off-wrap .on .one-on1 .img{
+                height: 82px;
+                width: 85px;
+                position: absolute;
+                top: 8px;
+                right: 10px;
+            }
+            .official .off-wrap .wrap-three{
+                width: 150px;
+                height: 240px;
+                background: url("../images/guanfang.png")no-repeat 50px 0px;
+                position: relative;
+            
+                top: -40px;}
+            
+            .official .off-wrap .wrap-three .bg{
+                width: 203px;
+                height: 233px;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on1{
+                width: 201px;
+                height: 236px;
+                background: url("../images/dibubg.png") no-repeat -406px 0 ;
+                position: absolute;
+                left: 0px;
+                 top: 64px;
+                
+                 z-index: 1;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on2{
+                width: 425px;
+                height: 100px;
+                position: absolute;
+                left: -500px;
+                top: 174px;
+                opacity: 0;
+                 z-index: 1;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on3{
+                width: 148px;
+                height: 175px;
+                position: absolute;
+                left: -73px;
+                top: 103px;
+                opacity: 0;
+                 z-index: 1;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on4{
+                width: 425px;
+                height: 100px;
+                position: absolute;
+                right: -600px;
+                bottom: -34px;
+                opacity: 0;
+                 z-index: 1;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on5{
+                width: 148px;
+                height: 175px;
+                position: absolute;
+                right: -174px;
+                bottom: -41px;
+               
+                opacity: 0;
+                 z-index: 1;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on2:hover ~.bg-on1{
+                background: url("../images/dibubg.png")no-repeat -13px 0;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on3:hover~.bg-on1{
+                background: url("../images/dibubg.png")no-repeat -202px 0;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on4:hover~.bg-on1{
+                background: url("../images/dibubg.png")no-repeat -808px 0;
+            }
+            .official .off-wrap .wrap-three .bg .bg-on5:hover ~.bg-on1{
+                background: url("../images/dibubg.png")no-repeat -607px 0;
+            }
+            
